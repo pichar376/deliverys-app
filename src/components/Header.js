@@ -1,5 +1,9 @@
 import styled from "styled-components";
 import FullWidthTextField from "./FullWidthTextField";
+import Button from '@mui/material/Button';
+
+
+
 
 const Header = () => {
   return (
@@ -7,13 +11,14 @@ const Header = () => {
     <MyStyleHeader>
       <section className="dronocargo">
         <p>Dronocargo</p>
-        <p>Regina Zepeda<span>icon</span></p>
+        <p>Regina Zepeda <span>icon</span></p>
 
       </section>
       <nav>
         <h1 className="title">Delivery <span className="history">History</span></h1>
         <section className="search">
           <FullWidthTextField />
+          <Button variant="contained" color="success">New delivery</Button>
         </section>
       </nav>
     </MyStyleHeader >
@@ -59,15 +64,21 @@ nav{
 .title {
   position:absolute;
   left:1rem;
-  top:1rem;
+  top:2rem;
 }
 .history{
   color:#00000060;
 }
 .search{
+display:flex;
  position:absolute;
  right:1rem;
  top:1rem;
+}
+Button{
+   margin-left:1rem;
+  text-transform:none;
+  width:14rem;
 }
 `
 

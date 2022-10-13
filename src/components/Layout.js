@@ -16,7 +16,6 @@ const ContainerLayout = styled.div`
 margin:10rem auto;
 width:60%;
 border:thin solid grey;
-
 `
 
 
